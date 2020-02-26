@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+.background {
+    background: url("https://images.unsplash.com/photo-1527261834078-9b37d35a4a32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.nav-bar {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: white;
+    width: 100%;
+    font-weight: bold;
+    top: 0;
+    overflow: hidden;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.nav-bar span {
+    display: flex;
+    flex: 2;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    align-self: center;
+    justify-content: start;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    padding-left: 20px;
+}
+
+.fa-music {
+    justify-self: center;
+    align-self: center;
+    padding-left: 15px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.nav-bar ul li {
+    font-family: 'Raleway', Tahoma, Geneva, Verdana, sans-serif;
+    flex: 1;
+    border: white 1px solid;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.nav-bar ul li:hover {
+    cursor: pointer;
+    border: 2px white solid;
+    transform: scale(1.1);
+}
+
+.body-container {
+    width:100%;
+    height: 100vh;
+    position: relative;
+}
+
+.body-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+}
+
+.body-container h1 {
+    padding: 100px 10px 10px 0;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+    
+}
+
+.body-container p {
+    font-size: 2.7rem;
+}
+
+.body-container button {
+    width: 50%;
+    margin: 0 auto;
+    background: none;
+    color: white;
+    border: 2px solid white;
+    padding: 15px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.body-container button:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+    transform: scale(1.2);
+}
+
+.fa-angle-double-right {
+    margin-left: 5px;
+}
+
+.tabs {
+    color: white;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+}
+
+.tabs .container {
+    background: rgba(10, 23, 85, 0.9);
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+	align-items: center;
+	justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.tab-content {
+    width: 100%;
+    background: white;
+}
+
+.tabs p {
+	font-size: 1.5rem;
+    padding-top: 0.5rem;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    
+}
+
+.tabs .container > div:hover {
+	cursor: pointer;
+}
+
+.show {
+    display: block !important;
+    opacity: 1 !important;
+    transition: all 1000 ease-in;
+}
+
+.tab-border:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    border-bottom: azure 4px solid;
+}
+
+.tab-item {
+    padding-top: 10px;
+}
+
+/* Hide initial content */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+	display: none;
+	opacity: 0;
+}
+
+#tab-1-content .text-container {
+    padding: 20px 0;
+}
+
+#tab-1-content p {
+    margin: 0;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+#tab-1-content img {
+    margin: 0 auto;
+    display: block;
+}
+
+
+#tab-1-content h4 {
+    font-size: 1.7rem;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin:0 0 20px 0;
+    padding-top: 20px;
+}
+
+#tab-1-content .tab-1-btn {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background: none;
+    color: midnightblue;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: block;
+    text-transform: uppercase;
+}
+
+#tab-1-content .tab-1-btn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#tab-2-content h2 {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 1.9rem;
+    text-align: center;
+}
+
+#tab-2-content span {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#tab-2-content img {
+    width: 100%;
+    padding: 20px 0;
+    display: block;
+    margin: 0 auto;
+}
+
+#tab-3-content {
+    padding: 10px;
+}
+
+#tab-3-content ol {
+    font-size: 1.3rem;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+#tab-3-content li {
+    font-size: 1.5rem;
+    list-style: decimal-leading-zero;
+}
+
+#tab-3-content p {
+    padding: 5px;
+}
+
+#tab-3-content p span {
+    font-weight: 900;
+}
+
+.footer {
+    background: rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    color: #3f3f3f;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.developers {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Cedarville Cursive', 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+.footer h1 {
+    padding-left: 20px;
+}
+
+.developers h3 {
+    flex: 1;
+    font-size: 1.5rem;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.social ul {
+    flex: 1;
+    padding: 0;
+}
+
+.social ul a {
+    padding: 5px;
+}
+
+.donation {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 500px) {
+    .nav-bar ul {
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    
+    .tabs .container {
+        display: flex;
+        background: rgba(10, 23, 85, 0.9);
+        padding-top: 20px;
+    }
+
+    .tab-item {
+        flex: 1;
+        width: 100%;
+        align-self: baseline;
+    }
+
+    .tab-border {
+        padding-bottom: 5px;
+    }
+}
+
+@media (min-width: 700px) {
+    #tab-2-content img {
+        width: 90%;
+    }
+}
+@media (min-width: 800px) {
+    #tab-2-content img {
+        width: 75%;
+    }
+}
+@media (min-width: 900px) {
+    #tab-2-content img {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1000px) {
+    #tab-1-content {
+        padding: 40px;
+    }
+
+    #tab-2-content img {
+        width: 50%;
+    }
+
+    #tab-3-content {
+        padding-left: 50px;
+    }
+
+    .body-container button {
+        width: 40%;
+    }
+
+    .nav-bar ul li {
+        padding: 20px;
+        font-size: 1.2rem;
+    }
+}
